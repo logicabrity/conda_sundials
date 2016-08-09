@@ -9,6 +9,7 @@ source:
 requirements:
   build:
     - cmake
+    - libgfortran
     - lapack
   run:
     - lapack
