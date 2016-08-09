@@ -1,2 +1,3 @@
-# conda_sundials
-a Conda recipe to build SUNDIALS
+# Conda SUNDIALS
+
+A Conda recipe to build SUNDIALS.

@@ -1,0 +1,26 @@
+package:
+  name: sundials
+  version: "2.6.2"
+
+source:
+  url: http://computation.llnl.gov/projects/sundials-suite-nonlinear-differential-algebraic-equation-solvers/download/sundials-2.6.2.tar.gz
+  md5: 3deeb0ede9f514184c6bd83ecab77d95
+
+requirements:
+  build:
+    - cmake
+    - lapack
+  run:
+    - lapack
+
+test:
+  requires:
+    - lapack
+
+  files:
+    - cvKrylovDemo_ls.c
+
+about:
+  home: http://computation.llnl.gov/projects/sundials-suite-nonlinear-differential-algebraic-equation-solvers
+  license: BSD
+  summary: SUite of Nonlinear and DIfferential/ALgebraic Equation Solvers 
