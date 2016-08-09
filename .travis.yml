@@ -1,0 +1,18 @@
+sudo: false
+language: c
+compiler: gcc
+
+before_install:
+  - make install-conda
+  - export PATH=$HOME/miniconda/bin:$PATH
+
+install:
+  - make build-sundials
+  - make install-sundials
+
+script:
+  - echo test
+
+notifications:
+  email:
+    on_failure: always
