@@ -11,4 +11,4 @@ install-conda:
 	conda upgrade --yes conda conda-build
 
 install-sundials:
-	conda install --use-local sundials
+	conda install --yes --use-local sundials
