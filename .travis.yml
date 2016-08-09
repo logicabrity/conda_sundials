@@ -4,6 +4,7 @@ compiler: gcc
 
 install:
   - export PATH=$HOME/miniconda/bin:$PATH
+  - echo $PATH
   - make install-conda
 
 script:
