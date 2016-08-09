@@ -2,16 +2,13 @@ sudo: false
 language: c
 compiler: gcc
 
-before_install:
-  - make install-conda
-  - export PATH=$HOME/miniconda/bin:$PATH
-
 install:
-  - make build-sundials
-  - make install-sundials
+  - export PATH=$HOME/miniconda/bin:$PATH
+  - make install-conda
 
 script:
-  - echo test
+  - make build-sundials
+  - make install-sundials
 
 notifications:
   email:
