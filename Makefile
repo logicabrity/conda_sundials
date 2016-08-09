@@ -1,7 +1,8 @@
 .PHONY: build-sundials install-sundials
 
 build-sundials:
-	conda build sundials -c cyclus
+	conda config --add channels cyclus
+	conda build sundials
 
 install-sundials:
 	conda install --use-local sundials -c cyclus
