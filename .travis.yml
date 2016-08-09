@@ -2,6 +2,11 @@ sudo: false
 language: c
 compiler: gcc
 
+addons:
+  apt:
+    packages:
+      - gfortran
+
 install:
   - export PATH=$HOME/miniconda/bin:$PATH
   - make install-conda
