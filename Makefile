@@ -2,7 +2,7 @@
 
 build-sundials:
 	conda config --add channels cyclus
-	conda build --yes sundials
+	conda build sundials
 
 install-conda:
 	wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh;
