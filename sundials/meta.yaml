@@ -14,9 +14,6 @@ requirements:
     - lapack
 
 test:
-  requires:
-    - lapack
-
   files:
     - cvKrylovDemo_ls.c
 
